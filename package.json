@@ -4,8 +4,8 @@
   "description": "API gateway for ShopUnicorn microservices",
   "main": "gateway.js",
   "scripts": {
-    "dev": "nodemon gateway.js",
-    "start": "node ./gateway.js",
+    "dev": "nodemon ./src/gateway.js",
+    "start": "node ./src/gateway.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

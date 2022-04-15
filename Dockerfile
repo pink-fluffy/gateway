@@ -13,5 +13,5 @@ COPY . .
 EXPOSE 9043
 
 # Run node
-RUN npm start
-#CMD ["node", "src/gateway.js"]
+#RUN npm start
+CMD ["node", "src/gateway.js"]

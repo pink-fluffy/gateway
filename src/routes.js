@@ -13,7 +13,7 @@ const ROUTES = [
     url: "/product",
     auth: true,
     proxy: {
-      target: `http://${config.PRODUCT_HOST}:${config.PRODUCT_PORT}`,
+      target: `http://${config.PRODUCTS_HOST}:${config.PRODUCTS_PORT}`,
       changeOrigin: true,
     },
   },

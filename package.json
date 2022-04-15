@@ -1,0 +1,33 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API gateway for ShopUnicorn microservices",
+  "main": "gateway.js",
+  "scripts": {
+    "dev": "nodemon gateway.js",
+    "start": "node ./gateway.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pink-fluffy/api.git"
+  },
+  "keywords": [],
+  "author": "Sidharth Sudarsan <hi@sidharth.me> (https://github.com/sidoverflow)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pink-fluffy/api/issues"
+  },
+  "homepage": "https://github.com/pink-fluffy/api#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "http-proxy-middleware": "^2.0.4",
+    "http-status-codes": "^2.2.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

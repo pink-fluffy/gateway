@@ -2,6 +2,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const express = require("express");
+const cors = require("cors");
 
 const { ROUTES } = require("./routes");
 const { setupProxy } = require("./proxy");
@@ -9,6 +10,7 @@ const { setupLogging } = require("./logging");
 const { setupAuth } = require("./auth");
 
 const app = express();
+app.use(cors());
 
 setupLogging(app);
 setupAuth(app, ROUTES);

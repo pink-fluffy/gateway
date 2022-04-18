@@ -17,6 +17,14 @@ const ROUTES = [
       changeOrigin: true,
     },
   },
+  {
+    url: "/cart",
+    auth: true,
+    proxy: {
+      target: `http://${config.CARTS_HOST}:${config.CARTS_PORT}`,
+      changeOrigin: true,
+    },
+  },
 ];
 
 exports.ROUTES = ROUTES;

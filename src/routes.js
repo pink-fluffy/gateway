@@ -11,7 +11,7 @@ const ROUTES = [
   },
   {
     url: "/product",
-    auth: true,
+    auth: false,
     proxy: {
       target: `http://${config.PRODUCTS_HOST}:${config.PRODUCTS_PORT}`,
       changeOrigin: true,

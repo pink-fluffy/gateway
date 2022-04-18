@@ -20,6 +20,9 @@ ARG IDENTITY_PORT
 
 ARG PRODUCTS_HOST
 ARG PRODUCTS_PORT
+
+ARG CARTS_HOST
+ARG CARTS_PORT
 # Run node
 #RUN npm start
 CMD ["node", "src/gateway.js"]
